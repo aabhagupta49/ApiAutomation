@@ -3,6 +3,17 @@ package files;
 import io.restassured.path.json.JsonPath;
 
 public class Payload {
+
+    public static String addBook(String aisle, String isbn) {
+
+        return "{\n" +
+                "\"name\":\"Learn Appium Automation with Python2\",\n" +
+                "\"isbn\":\""+isbn+"\",\n" +
+                "\"aisle\":\""+aisle+"\",\n" +
+                "\"author\":\"John foe\"\n" +
+                "}";
+    }
+
     public static String CourseContent() {
         return "{\n" +
                 "\n" +
